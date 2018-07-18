@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+git init
+git status
+You create a git repository which can track versions but no commits are made during initialization. The first commit has to be done with git commit. A system (unvisible) .git file is created.
