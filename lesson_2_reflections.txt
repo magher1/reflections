@@ -2,3 +2,17 @@ What happens when you initialize a repository? Why do you need to do it?
 git init
 git status
 You create a git repository which can track versions but no commits are made during initialization. The first commit has to be done with git commit. A system (unvisible) .git file is created.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+It's an intermediate place to put files before commiting. It shows what will be in the repository once we commit.
+
+git add (add to the staging area)
+git status
+git commit -m ""
+git diff (shows diff repository:staging area)
+git diff --staged (diff staging area:last commit)
+git diff commit1 commit 2
+git checkout master (when HEAD detached)
+
+How can you use the staging area to make sure you have one commit per logical change?
+Add changes one by one to the staging area and commit them separately.
