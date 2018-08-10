@@ -16,3 +16,15 @@ git checkout master (when HEAD detached)
 
 How can you use the staging area to make sure you have one commit per logical change?
 Add changes one by one to the staging area and commit them separately.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches are helpful if we want to create different versions of the app (or different language version)
+git branch easy-mode
+git checkout easy-mode
+git checkout -b easy-mode (=git branch easy-mode + git checkout easy-mode)
+
+How do the diagrams help you visualize the branch structure?
+They allow to understand what was commited where and which changes won't be visible in certain commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+It merges the changes commited by multiple participants, taking into account what has actually been changed by all of them (if one deletes a line and the other adds something  but doens't delete the line, a result will be both changes implemented - a delete and an add)
